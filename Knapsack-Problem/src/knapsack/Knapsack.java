@@ -25,12 +25,21 @@ public class Knapsack {
 	public int getBagID() {
 		return bagID;
 	}
+	
+	public LinkedList<Item> getBagItems(){
+		return knapsack;
+	}
 
 	public void addItem(Item item) {
 		if (this.capacity-item.getWeight() >= 0) {
 			knapsack.add(item);
 			this.capacity -= item.getWeight();
 		}
+	}
+	
+	public void removeItem(Item item) {
+		knapsack.remove(item);
+		this.capacity += item.getWeight();
 	}
 
 }
