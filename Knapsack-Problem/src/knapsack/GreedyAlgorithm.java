@@ -17,8 +17,6 @@ public class GreedyAlgorithm {
 	
 	public void fillBags(Knapsack[] bagList, LinkedList<Item> itemList) {
 		System.out.println();
-		Item itemOne = null;
-		Item itemTwo = null;
 		
 		if (itemList.size() == 0) {
 			System.out.println("No more items.");
