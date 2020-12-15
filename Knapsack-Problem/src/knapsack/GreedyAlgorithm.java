@@ -41,8 +41,6 @@ public class GreedyAlgorithm {
 			fillBags(bagList, itemList);
 			return;
 		}
-		
-		
 	}
 
 	public int getBestFit(double weight) {
