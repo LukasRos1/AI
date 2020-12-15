@@ -15,7 +15,8 @@ public class main {
 
 
 		LinkedList<Item> itemList = Item.initItemList();
-		new GreedyAlgorithm(bagList, itemList);
+		GreedyAlgorithm greedy = new GreedyAlgorithm(bagList, itemList);
+		new NeighborhoodSearch(bagList, itemList, greedy.getUnusedItems());
 	}
 
 }
